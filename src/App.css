@@ -1,38 +1,275 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Silkscreen';
+  /* Give your font a name */
+  src: url('./Silkscreen/slkscr.ttf') format('truetype');
+  /* Provide the path to your TTF font file */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box ;
+  font-family: 'DM Sans', sans-serif;
+}
+body{
+  width: 100%;
+  height: 100%;
+}
+nav{
+  height: fit-content;
+  background-color: black;
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  position: sticky;
+  top: 0;
+
+}
+.main-nav{
+  width: 90%;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bottom {
+width: 90%;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+color: white;
+
+margin: 1rem 0 4rem 0;
+}
+.bottom button{
+background-color: inherit;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: 549;
+border: none;
+font-size: larger;
+text-transform: capitalize;
+}
+.bottom button:focus{
+color: black;
+background: white;
+}
+.hero{
+  position: relative;
+  background: #B8DBD9;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+.w90{
+  width: 90%;
+
+}
+.hero span{
+text-align: center;
+display: block;
+}
+.text{
+  margin-bottom: 2rem;
+  font-size: x-large;
+  font-weight: 500;
+  text-transform: capitalize;
+} 
+.hero-text{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size:clamp(7vh , 7.7vh ,8rem);
+  line-height: 2.5rem;
+  word-spacing: 5px;
+  font-family: 'Silkscreen', sans-serif;
+}
+.image-div{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.image-div img{
+filter: grayscale(100%);
+object-fit: cover;
+object-position: center;
+height: 25rem;
+width: 100%;
+display: block;
+}
+.why-us{
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
+}
+.why-us-text{
+font-family: 'Silkscreen', sans-serif;
+text-transform: uppercase;
+margin-bottom: 2rem;
+}
+.why-us-p{
+  word-wrap: normal;
+  margin-bottom: 2rem;
+}
+.socials{
+display: flex;
+gap: 0.5rem;
+}
+.socials img {
+  display: block;
+  aspect-ratio: 1;
+}
+.cards{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #B8DBD9;
+  height: fit-content;
+  position: relative;
+    z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  background: #A7D2D0;
+  width: 100%;
+  border-radius: 10px;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.card:nth-child(2) {
+  transform: scale(1);
+}
+.card:nth-child(3){
+  margin-bottom: 0;
+}
+.card-w90{
+  width: 90%;
+  height:fit-content;
+
+}
+.img-div{
+width: 100%;
+height: 13.5rem;
+background:#B8DBD9;
+border-radius: 10px;
+margin-bottom: 1rem;
+display: grid;
+place-content: center;
+}
+.card h3{
+font-family: 'Silkscreen', sans-serif;
+font-weight: 400;
+margin-bottom: 0.5rem;
+}
+.card span{
+  text-transform: capitalize;
+}
+.moments{
+  position: relative;
+  z-index: -1;
+  padding: 3rem 0;
+  height: fit-content;
+  display: flex;
+ justify-content: center;
+ background-color: black;
+ color: white !important;
+}
+.moments h2{
+font-family: 'Silkscreen', sans-serif;
+font-weight: 400;
+margin-bottom: 1rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  grid-template-rows: repeat(3 , 150px);
+  grid-gap: 1rem;
+}
+.grid-item{
+  border-radius: 25px;
+  overflow: hidden;
+}
+.grid-item img{
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  width: 100%;
+  height: 100%;
+}
+.one{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.three {
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+.two{
+  grid-column: 2/3;
+  grid-row: 1/3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.four{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.booking{
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: #B8DBD9;
+  height: fit-content;
+
+}
+.booking .w90{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.booking h1{
+font-family: 'Silkscreen', sans-serif;
+font-weight: 400;
+margin-bottom: 0.5rem;
+}
+.booking p {
+  font-size: small;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.booking button{
   color: white;
+  background-color: black;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding:9px 0;
+  width: 100%;
+  font-size: medium;
+  border: none;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  /* position: sticky; */
+  bottom: 0;
+  padding: 2rem 0 ;
+  border-top: 0.2px solid black;
+  text-align: center;
+  background-color: #B8DBD9;
+  height: fit-content;
+  
+  /* width: 100%; */
 }

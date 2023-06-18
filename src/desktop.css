@@ -1,0 +1,290 @@
+@media (width >=1200px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        padding: 3rem 0;
+
+    }
+
+    .logo {
+        /* font-size: clamp(7vh, 7.7vh, 8rem); */
+    }
+
+    .main-nav {
+        align-items: center;
+    }
+
+    .right {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        color: white;
+    }
+
+    .right button {
+        background-color: inherit;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 549;
+        border: none;
+        font-size: larger;
+        text-transform: capitalize;
+    }
+
+    .right button:focus {
+        color: black;
+        background: white;
+    }
+
+    .hero {
+        padding: 7rem 0 7rem 0;
+    }
+
+    .hero-text {
+        line-height: initial;
+        font-size: clamp(14rem, 17rem, 5rem);
+        margin-bottom: 7rem;
+    }
+
+    .image-div img {
+        height: 45rem;
+    }
+
+    .why-us {
+        padding: 7rem 0;
+    }
+
+    .why-us .w90 {
+        width: 90%;
+    }
+
+    .why-us-text {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .why-us-p {
+        font-size: large;
+        line-height: 2rem;
+        width: 50ch;
+    }
+
+    .socials {
+        gap: 1rem;
+    }
+
+    .cards {
+        position: relative;
+        z-index: -1;
+        align-items: center;
+        padding: 7rem 0;
+    }
+
+    .card:nth-child(2) {
+
+        transform: scale(1.1);
+    }
+
+    .card:nth-child(3) {
+        margin-bottom: 1rem;
+    }
+
+    .cards .w90 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .moments {
+        padding: 7rem 0;
+    }
+
+    .moments h2 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
+        grid-template-rows: repeat(3, 350px);
+        grid-gap: 1rem;
+    }
+
+    .grid-item {
+        border-radius: 45px;
+    }
+
+    .booking {
+        padding: 7rem 0;
+    }
+
+    .booking h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking p {
+        width: 40ch;
+        font-size: large;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .booking button {
+        padding: 9px 11px;
+        width: fit-content;
+    }
+}
+
+
+
+@media (width>=510px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        padding: 2rem 0;
+    }
+
+
+    .main-nav {
+        align-items: center;
+    }
+
+    .right {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        color: white;
+    }
+
+    .right button {
+        background-color: inherit;
+        padding: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 549;
+        border: none;
+        font-size: xx-large;
+        text-transform: capitalize;
+    }
+
+    .right button:focus {
+        color: black;
+        background: white;
+    }
+
+    .hero {
+        padding: 7rem 0 7rem 0;
+    }
+
+    .hero-text {
+        /* line-height: initial; */
+        font-size: clamp(10rem, 15rem, 7rem);
+        margin-bottom: 3rem;
+    }
+
+    .image-div img {
+        height: 45rem;
+    }
+
+    .why-us {
+        padding: 7rem 0;
+    }
+
+    .why-us .w90 {
+        width: 90%;
+    }
+
+    .why-us-text {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .why-us-p {
+        font-size: large;
+        line-height: 2rem;
+        width: 50ch;
+    }
+
+    .socials {
+        gap: 1rem;
+    }
+
+    .cards {
+        position: relative;
+        z-index: -1;
+        align-items: center;
+        padding: 7rem 0;
+    }
+
+    .card:nth-child(2) {
+        transform: scale(1.1);
+    }
+
+    .card:nth-child(3) {
+        margin-bottom: 1rem;
+    }
+
+    .cards .w90 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .moments {
+        padding: 7rem 0;
+    }
+
+    .moments h2 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(130px, 1fr));
+        grid-template-rows: repeat(3, 350px);
+        grid-gap: 1rem;
+    }
+
+    .grid-item {
+        border-radius: 45px;
+    }
+
+    .booking {
+        padding: 7rem 0;
+    }
+
+    .booking h1 {
+        font-weight: 700;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .booking p {
+        width: 40ch;
+        font-size: large;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .booking button {
+        padding: 9px 11px;
+        width: fit-content;
+    }
+
+
+}
